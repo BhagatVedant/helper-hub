@@ -2,6 +2,7 @@ const services = [
   {
     id: 'plumbing',
     title: 'Plumbing',
+    image: 'plumbing.png',
     short: 'Qualified plumbers for households.',
     description: 'Professional plumbers for installations, repairs and maintenance.',
     plans: [
@@ -13,6 +14,7 @@ const services = [
   {
     id: 'cleaning',
     title: 'Cleaning',
+    image: 'cleaning.png',
     short: 'Home & office deep cleaning.',
     description: 'Trusted cleaners for one-time or recurring cleaning services.',
     plans: [
@@ -24,6 +26,7 @@ const services = [
   {
     id: 'electrical',
     title: 'Electrical',
+    image: 'electric.png',
     short: 'Certified electricians.',
     description: 'Electrical repairs, switchboard work and safety checks.',
     plans: [
@@ -35,6 +38,7 @@ const services = [
   {
     id: 'ac-repair',
     title: 'AC Repair',
+    image: 'acrepair.png',
     short: 'AC servicing and repair.',
     description: 'Servicing, gas top-up, and repairs for home ACs.',
     plans: [

@@ -17,11 +17,23 @@ export default function ServicePage() {
     )
   }
 
+  const img = service.image ? new URL(`../assets/${service.image}`, import.meta.url).href : null
+
   return (
     <div className="container service-page">
-      <section className="service-intro">
-        <h2>{service.title}</h2>
-        <p className="lead">{service.description}</p>
+      <section className="service-hero">
+        <div className="service-hero-content">
+          <h1 className="hero-title">{service.title}</h1>
+          <p className="lead">{service.description}</p>
+          <div style={{marginTop:12}}>
+            <Link to="/services" className="btn btn-ghost">Back to services</Link>
+          </div>
+        </div>
+        {img && (
+          <div className="service-hero-media">
+            <img src={img} alt={service.title} />
+          </div>
+        )}
       </section>
 
       <section className="service-plans">
